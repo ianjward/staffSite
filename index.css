@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    background-color: #e1e1e1;
+}
+
+:root {
+    --squareDimension: 3.5vw;
+    --fontSize: 3vw;
+}
+
+input{
+    height: var(--squareDimension);
+    width: var(--squareDimension);
+    text-align: center;
+    margin: .25vw;
+    font-weight: 600;
+    font-size: var(--fontSize);
+    font-family: serif;
+    caret-color: transparent;
+    border-radius: .25em;   
+}
+
+#submit{
+    margin-top: .5vh;
+    font-weight: 300;
+    font-size: calc(var(--fontSize)*.5);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.dot{
+    display: inline;
+    font-size: var(--fontSize);
+    vertical-align: bottom;
+}
+
+.dash{
+    display: inline;
+    font-size: var(--fontSize);
+    margin: .25vw;
+}
+
+.almostGuess{
+    background-color: beige;
+    color: black;
+    border-color: gray;
+}
+.almostGuessInput{
+    background-color: beige;
+    color: black;
+    border-color: gray;
+    border-radius: .15em;
+}
+
+.badGuess{
+    background: gray;
+    color: white;
+    border-color: gray;
+}
+.badGuessInput{
+    background: gray;
+    color: white;
+    border-color: gray;
+    border-radius: .15em;
+}
+
+.goodGuess{
+    background-color: darkseagreen;
+    color: white;
+    border-color: gray;
+}
+.goodGuessInput{
+    background-color: darkseagreen;
+    color: white;
+    border-color: gray;
+    border-radius: .15em;
+}
+
+@media screen and (max-width: 950px) {
+    #layout{
+        display: flex; 
+        width: 100vw; 
+        flex-direction: column; 
+        justify-content: space-between;
+    }
+
+    #leftMenu{
+        display: flex;
+        margin: 0;
+        padding-left: 15px;
+        padding-top: 15px;
+        flex-direction: row;
+        background-color: #eeeeee;
+        width: 100vw;
+        align-items: center;
+        max-height: 100vh;
+    }
+
+    #gameWrapper{
+        display: none;
+        width:100vw;
+        align-items: center;
+        justify-content: center;
+        background-color: #e1e1e1;
+    }
+
+    #pic{
+        width: 90px; 
+        border-radius: 1vw;
+        margin-right: 20px;
+    }
+
+    #email{
+        width:160px;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    #layout{
+        display: flex; 
+        width: 100vw; 
+        height: 100vh;
+        max-height: 100vh;
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+
+    #leftMenu{
+        display: flex;
+        margin: 0;
+        padding-left: 15px;
+        padding-top: 15px;
+        flex-direction: column;
+        background-color: #eeeeee;
+        width: 8vw;
+        align-items: left;
+        max-height: 100vh;
+    }
+
+    #rightMenu{
+        margin:0;
+        background-color: #bdbdbd;
+        width:8vw;
+        height:100vh;
+    }
+
+    #header{
+        font-size: 35px;
+    }
+
+    #gameWrapper{
+        display: flex;
+        width:87vw;
+        align-items: center;
+        justify-content: center;
+        background-color: #e1e1e1;
+    }
+
+    #pic{
+        width: 6vw; 
+        border-radius: 1vw;
+    }
+
+    #email{
+        width:8vw;
+    }
+}
+
+#contactList{
+    list-style-type: none;
+    font-size: .75em;
+    margin-top: 120;
+    padding:0;
+}
+
+h1{
+    margin-top: 0px;
+}
+
+#key{
+    height: var(--squareDimension);
+    width: var(--squareDimension);
+    text-align: center;
+    line-height: .5em;
+    margin: .25vw;
+    font-weight: 300;
+    font-size: var(--fontSize);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#wordGame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#keys{
+    width: 38vw;
+    padding-top: 1.5vh;
+}
+
+
